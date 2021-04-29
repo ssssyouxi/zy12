@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="cn-zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="./css/pintuer-2.0.custom.css">
+    <!-- <link rel="stylesheet" href="./css/pintuer-2.0.css"> -->
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/inside.min.css">
+    <title>Document</title>
+</head>
+
+<body id="contact">
+    <header class="container">
+        <div class="pc-nav grid clearfix">
+            <div class="flex flex-items-center small-x3"><img src="./img/logo.jpg" class="img-auto"></div>
+            <ul class="list-unstyle grid align-center small-x9 flex flex-end">
+                <li class="index"><a href="./index.html" class="block">首页</a></li>
+                <li class="product"><a href="./product_index.html" class="block">产品中心</a></li>
+                <li class="about"><a href="./about.html" class="block">关于黎明</a></li>
+                <li class="case"><a href="./case_index.html" class="block">案例中心</a></li>
+                <li class="news"><a href="./news_index.html" class="block">新闻中心</a></li>
+                <li class="contact"><a href="./contact.html" class="block">联系我们</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="sidebar border-right small-hidden sidebar-close" id="sidebar" style="width:180px;">
+        <ul class="nav nav-switch size-mini" data-sidebar='{"target":"#sidebar"}'>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <a class="block align-center margin-top" href="javascript:;">
+            <img src="./img/logo_s.jpg" alt="">
+        </a>
+        <ul class="nav nav-icon nav-icon-text nav-menu nav-divider margin-top border-top border-bottom">
+            <li class="index"><a href="./index.html"><span class="nav-arrow sidebar-hidden">首页</span></a></li>
+            <li class="product"><a href="./product_index.html"><span class="nav-arrow sidebar-hidden">产品中心</span></a></li>
+            <li class="about"><a href="./about.html"><span class="nav-arrow sidebar-hidden">关于黎明</span></a></li>
+            <li class="case"><a href="./case_index.html"><span class="nav-arrow sidebar-hidden">案例中心</span></a></li>
+            <li class="news"><a href="./news_index.html"><span class="nav-arrow sidebar-hidden">新闻中心</span></a></li>
+            <li class="contact"><a href="./contact.html"><span class="nav-arrow sidebar-hidden">联系我们</span></a></li>
+        </ul>
+    </div>
+    <article class="overflow-hidden">
+        <div class="banner1 relative">
+            <img src="./img/bg_contact_1.jpg" class="img-auto bg1">
+            <div class="bread absolute flex flex-items-center">
+                <div class="container align-left bg-inverse">
+                    <p class="mini-show">当前位置：首页 > 联系我们</p>
+                    <p class="size-large"><strong>联系我们</strong></p>
+                </div>
+            </div>
+        </div>
+        <section class="relative ">
+            <img src="./img/bg_contact_2.jpg" class="img-auto big-show bg1">
+            <div class="ab  flex flex-items-center layout">
+                <div class="container">
+                    <div class="grid">
+                        <div class="big-x7">
+                            <div class="bo grid">
+                                <p class="title size-large margin-bottom-none layout"><strong>联系我们</strong></p>
+                                <p class="welcome layout">河南黎明重工科技股份有限公司欢迎社会各界与我们联系，我们全天恭候您的垂询！</p>
+                                <div class="media small-x7 l">
+                                    <img src="./img/icon_contact_phone.jpg" class="margin-right radius-big" />
+                                    <div class="media-body">
+                                        <p class="h5 margin-bottom-none">24小时全国服务热线</p>
+                                        <p class="line-mini"><a href="tel:0371-67986666" class="text-sub"><strong class="h5">0371-<span>67986666</span></strong></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="media small-x5 r">
+                                    <img src="./img/icon_contact_talk.jpg" class="margin-right radius-big" />
+                                    <div class="media-body">
+                                        <p class="h5 margin-bottom-none">联系客服</p>
+                                        <p class="h3 margin-bottom-none"><a href="tel:0371-67986666" class="text-sub"><strong>点击马上咨询</strong></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="address">中国-郑州-国家高新技术产业开发区科学大道169号</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+    <div class="form container grid-large" id="form">
+        <p class="title h3 align-center"><strong>在线留言</strong></p>
+        <p class="align-center size-small">您可以通过 <a href="#form">在线留言</a> 或者 <a href="#">商务通</a> 联系我们，也可以拨打我们的全国销售热线：<a
+                href="tel:400-655-1888" class="h5">400-655-1888</a>。</p>
+        <form action="" method="POST" class="grid">
+            <div class="small-x6 grid">
+                <select class="province x6" name="province" id="param_province" onchange="provincechange()">
+                    <option>请选择省份</option>
+                </select>
+                <select class="city move1 x5" name="city" id="param_city">
+                    <option>请选择城市</option>
+                </select>
+                <input class="x12" type="text" placeholder="您的称呼" required>
+                <input class="x12" type="text" placeholder="联系电话" required>
+            </div>
+            <div class="small-x6 grid r">
+                <input class="x12" type="text" placeholder="邮箱/QQ">
+                <textarea name="" id="" class="x12" placeholder="产品需求"></textarea>
+            </div>
+            <div class="flex flex-center layout">
+                <button type="submit" class="button margin">提交</button>
+                <button type="reset" class="button margin">重置</button>
+            </div>
+
+        </form>
+    </div>
+    <footer class="padding-bottom-small padding-top">
+        <div class="grid-big container">
+            <div class="grid">
+                <div class="big-x4 middle-x4 small-x12">
+                    <p class="title h3"><strong>联系方式</strong></p>
+                    <ul class="list-unstyle l">
+                        <li class="padding-left-large margin-bottom po">
+                            <p>中国-郑州-国家高新技术产业开发区科学大道169号</p>
+                        </li>
+                        <li class="padding-left-large ph">
+                            <p>联系电话：400-655-9906</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="big-x2  middle-x4 small-x4">
+                    <p class="title h3"><strong>产品推荐</strong></p>
+                    <ul class="list-unstyle">
+                        <li class="margin-bottom"><a href="./product_article.html">
+                                <p>MTW欧版磨</p>
+                            </a></li>
+                        <li class="margin-bottom"><a href="./product_article.html">
+                                <p>LM立式磨粉机</p>
+                            </a></li>
+                        <li class="margin-bottom"><a href="./product_article.html">
+                                <p>5X系列离心冲击式破碎机</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="big-x2  middle-x4 small-x4">
+                    <p class="title h3 h"><strong>&nbsp;</strong></p>
+                    <ul class="list-unstyle">
+                        <li class="margin-bottom"><a href="./product_article.html">
+                                <p>HPT液压圆锥破</p>
+                            </a></li>
+                        <li class="margin-bottom"><a href="./product_article.html">
+                                <p>HGT旋回式破碎机</p>
+                            </a></li>
+                        <li class="margin-bottom"><a href="./product_article.html">
+                                <p>欧版反击式破碎机</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="big-x4 small-x4">
+                    <p class="title h3"><strong>产品知识</strong></p>
+                    <ul class="list-unstyle">
+                        <li class="margin-bottom"><a href="./news_article.html">
+                                <p>黎明中速磨煤机助沪粉煤灰变废为宝</p>
+                            </a></li>
+                        <li class="margin-bottom"><a href="./news_article.html">
+                                <p>大型矿山机械装备园</p>
+                            </a></li>
+                        <li class="margin-bottom"><a href="./news_article.html">
+                                <p>砂石料行业发展趋势</p>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="align-center size-small padding-left padding-right bottom">
+        版权所有©河南黎明重工科技股份有限公司 备案号:豫ICP备10200540号-22
+    </div>
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/pintuer-2.0.min.js"></script>
+<script src="./js/province.js"></script>
+
+</html>

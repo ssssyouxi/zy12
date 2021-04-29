@@ -1,0 +1,290 @@
+@mixin title($value)
+    background: url($value) no-repeat center bottom
+    font-size: 2.25rem
+    color: #333
+    text-align: center
+    line-height: 2.25rem
+    padding-top: 2.75rem
+    
+.sec1
+    margin-top: 3rem
+    p.title
+        font-size: 2.25rem
+    p.content 
+        color: #666
+        line-height: 2.0625rem
+        margin-bottom: 0
+    .media
+        strong 
+            font-size: 2.25rem
+            color: #1e1e1e
+            font-weight: bold
+            margin-bottom: 0
+        p 
+            color: #666
+.sec2
+    margin-top: 4rem
+    .title 
+        @include title('../img/bg_index_sec2.jpg')
+        margin-bottom: 4rem
+    ul.list1 
+        li 
+            a 
+                padding: .125rem 3rem
+                border-radius: 50px
+        li.nor
+            div.c1 
+                // border: 2px solid #fff 
+                // border-radius: 10px
+                // border-image: linear-gradient(to right,var(--color-main), #fff ,var(--color-main)) 29 12
+                border-radius: 50px
+                padding: .125rem
+                background-image: -webkit-linear-gradient(left, #177175, #fff ,#177175)
+                background-image: -moz-linear-gradient(left, #177175, #fff ,#177175)
+                background-image: linear-gradient(left, #177175, #fff ,#177175)
+                a 
+                    background: #fff
+                    color: #c53950
+            div.c2 a
+                background: url("../img/bg_index_sec2_1.png") repeat center
+                color: var(--color-white)
+                min-height: 3.125rem
+                line-height: 3.125rem
+        li.spec 
+            a 
+                background: url("../img/bg_index_sec2_1.png") repeat center
+                color: var(--color-white)
+                cursor: pointer
+                padding-top: .25rem
+                padding-bottom: .25rem
+    ul.pro-list
+        li 
+            div.d1
+                div.d2 
+                    border-bottom-left-radius: 2.2rem
+                    border-bottom-right-radius: .5rem
+                    background-color: var(--color-main)
+                    &::before 
+                        content: ""
+                        position: absolute
+                        top: 0rem
+                        left: -25rem
+                        width: 0px
+                        height: 0
+                        border-top: 20rem solid white
+                        border-right: 0rem solid transparent
+                        border-bottom: 0px solid transparent
+                        border-left: 73rem solid transparent
+                        z-index: 3
+                    .hid
+                        position: absolute
+                        height: 100%
+                        background-color: var(--color-sub)
+                        z-index: 2
+                        border-bottom-left-radius: 2.2rem
+                        border-bottom-right-radius: .5rem
+                    img
+                        z-index: 4
+                        border-top-left-radius: 2.2rem
+                        border-top-right-radius: 2.2rem
+                        border-bottom-right-radius: 2.2rem
+                    p 
+                        line-height: 4rem
+                        color: var(--color-white)
+                        z-index: 4
+
+
+.sec3
+    background: url("../img/bg_index_sec3.jpg") no-repeat center
+    margin-top: 3.5rem
+    padding-top: 5rem
+    padding-bottom: 3.5rem
+    .title
+        @include title('../img/bg_index_sec3_title.png')
+    .flip
+        .flip-item
+            padding-bottom: 6rem
+            .pad
+                padding-top: 6rem
+                .d-1
+                    background-color: var(--color-white)
+                    .l
+                        .img1
+                            left: 50%
+                            z-index: 10
+                            top: -4rem
+                            border-top-left-radius: 1.25rem
+                            border-top-right-radius: 1.25rem
+                            transition: all 0.5s ease
+                        .commit
+                            background-color: var(--color-white)
+                            z-index: 10
+                            p.h3 
+                                strong
+                                    color: #333
+                            .media-body p 
+                                color: #666
+                        .color
+                            background-image: linear-gradient(var(--color-sub),var(--color-main));
+                            height: 26rem
+                            top: -2rem
+                            z-index: 9
+                            transition: all 0.5s ease
+                    .r
+                        p.tit 
+                            left: 50%
+                            font-size: 1.875rem
+                            a:hover 
+                                color: var(--color-main)
+                        p.intro 
+                            color: #666
+                        p.h4
+                            margin-bottom: -1rem
+                            color: var(--color-main)
+                            strong
+                                box-shadow: 0 1px 6px #333 !important
+                                padding-left: 3rem
+                                padding-right: 3rem
+                        .f1
+                            background-color: var(--color-main)
+.sec4
+    margin-top: 4rem
+    .title
+        @include title('../img/bg_index_sec4_title.png')
+        margin-bottom: 3.5rem
+    div.news
+        p.list-title
+            padding-left: 2.5rem
+            background: url("../img/icon_index_fire.jpg") no-repeat left center
+            a 
+                color: #666
+        .media
+            a
+                display: inherit
+                color: #333
+            &:hover  
+                .news-title
+                    color: var(--color-main)
+            .news-title
+                font-weight: bold
+            p.word-break
+                line-height: 2rem
+        .news-title1
+            background: url("../img/icon_index_news.jpg") no-repeat left center
+            &:hover
+                color: var(--color-main)
+        ul.news-list
+            margin-top: 3rem
+            li 
+                margin-bottom: 2rem
+@media(min-width: 762px)
+    .sec3
+        .d-1
+            position: relative
+            .l
+                position: relative
+                .img1
+                    position: absolute
+                    transform: translateX(-50%);
+                .commit
+                    position: absolute
+            .r 
+                .tit
+                    position: absolute
+                    transform: translateX(-50%)
+@media(min-width: 1232px)
+    .sec2
+        ul.list1
+            li 
+                height: 50px
+            li.nor:last-child
+                div
+                    width: 196px !important
+                a
+                    padding-left: 2.25rem
+                    padding-right: 2.25rem
+            li.nor
+                &::before
+                    content: ""
+                    height: 10px
+                    width: 10px
+                    position: absolute
+                    top: 40%
+                    left: -0.25rem
+                    background-color: var(--color-main)
+                    border-radius: 5px
+    .sec3
+        .r p.tit 
+            left: 0 !important
+            transition: all 0.5s ease !important
+        .pad:hover
+            .l
+                .img1
+                        top: -4rem !important
+                        transition: all 0.5s ease
+                .color
+                        top: -2rem !important
+                        transition: all 0.5s ease
+            .r 
+                p.tit 
+                    left: 50% !important
+                    transition: all 0.5s ease !important
+        .l
+            .commit
+                bottom: 0
+            .color
+                top: 0 !important
+            .img1
+                top: 0 !important
+            &:hover
+                .img1
+                    top: -4rem !important
+                    transition: all 0.5s ease
+                .color
+                    top: -2rem !important
+                    transition: all 0.5s ease
+
+        .r 
+            .tit
+                top: -4rem
+@media(min-width: 762px) and (max-width: 1231px)
+    .sec3 
+        .l
+            height: 32rem
+@media(max-width: 1231px)
+    .sec3 
+        .l
+            .commit
+                bottom: 3rem
+        .r 
+            .tit
+                top: -2rem
+@media(max-width: 761px)
+    .sec2 
+        ul.list1 
+            li 
+                height: 4rem
+                a 
+                    padding: .125rem 2rem
+        ul.pro-list li div.d1 div.d2 img
+            width: 100% !important
+    .sec3
+        background: none
+    .sec4 
+        ul.news-list
+            li 
+                margin-bottom: 1rem !important
+@media(max-width: 571px)
+    .sec1
+        .media
+            display: none
+            
+    .sec3
+        .l
+            .img1
+                top: -1rem !important
+    .sec4
+        ul.news-list
+            li 
+                span.word-more
+                    width: 66% !important
